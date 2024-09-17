@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos Sonhos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-lg bg-orange">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem dos sonhos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Orçamento
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+        <h1>Venha realizar a viagem dos seus Sonhos!</h1>
+        
+    </header>
+
+    <section class="container-fluid bg-light text-center">
+        <br>
+        <h2>Conheça nossos pacotes!</h2>
+        <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque modi, iste est soluta culpa dicta facilis non odit quo ea, a dolorem deleniti aspernatur optio molestiae? Totam, aliquam facere.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa vero ut a accusamus! Iusto a esse sit, facere modi corrupti ducimus odit nihil architecto vel blanditiis cumque earum! Sequi?     
+        </p>
+         <div class="row">        
+            <figure class="col text-center">
+                <img src="img/nossos pacotes/gramado2.jpg" alt="Chalés em gramado RS">
+                <figcaption>Gramado</figcaption>
+            </figure>
+
+            <figure class="col text-center">
+                <img src="img/nossos pacotes/porto seguro.jpeg" alt="Praia em porto seguro">
+                <figcaption>Porto Seguro</figcaption>
+            </figure>
+
+            <figure class="col text-center">
+                <img src="img/nossos pacotes/rio de janeiro.jpeg" alt="Cristo redentor e pão de açucar">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+         </div>
+
+     </section>
+     
+        <section class="container-fluid bg-light text-xl-center p-2">
+            <h2>Taxas e Serviços:</h2>
+         <!-- <p>Veja nossas taxas para Serviços:</p>-->  
+            <table class="table table-warning table-striped table-hover table-bordered border-warning">
+                <caption>Descrição dos Serviços e respectivos valores:</caption>
+                <thead class="table-secondary">
+                
+                <tr>
+                    <th>
+                        Serviço
+                    </th>
+                    <th>
+                        Valor
+                    </th>
+                </tr>
+            </thead>
+                <tbody class="table-group-divider"> 
+                    <tr>
+                        <td>
+                            Reserva de hotel
+                        </td>
+                        <td>
+                            R$500,00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Compra de passagens
+                        </td>
+                        <td>
+                            R$100,00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aluguel de carros
+                        </td>
+                        <td>
+                            R$50,00
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="container-fluid bg-light p-2">
+            <h2>Orçamento:</h2>
+            <form method="get" action="">
+                <fieldset>
+                    <legend>Dados da Viagem</legend>
+                    <div class="mb-3">
+                    <label class="form-label" for="nome">
+                        Nome:
+                    </label>
+                    <input type="text" class="form-control" name="nome" id="nome"> 
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="nome">
+                            E-mail:
+                        </label>
+                        <input type="email" class="form-control" name="email" placeholder='thiago@gmail.com' required id="e-mal"> 
+                    </div>
+
+                    <div class="mb-3">
+                    <label class="form-label" for="dataIda">
+                            Data de Ida:
+                    </label>
+                    <input type="date" class="form-control" name="dataIda" id="dataIda">
+                    </div>
+
+                    <div class="mb-3">                     
+                    <label class="form-label" for="dataVolta">
+                            Data de Volta:
+                    </label>
+                    <input type="date" class="form-control" name="dataVolta" id="dataVolta">
+                    </div>
+                </fieldset>       
+
+                <fieldset>
+                <legend>Quais serviço deseja contratar?</legend>
+                <div>
+                    <input type="checkbox" class="form-check-input" name="passagens" value="Passagen" id="compraPassagens">
+                    <label class="form-check-label" for="compraPassagens">  
+                        Compra de passagens
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="form-check-input" name="hospedagem" value="hospedagem" id="reservaHospedagem">
+                    <label class="form-check-label" for="compraPassagens">  
+                        Reserva Hospedagem
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="form-check-input" name="veiculos" value="aluguelveiculos" id="aluguelVeiculos">
+                    <label class="form-check-label" for="aluguelVeiculos">  
+                        Aluguel Veiculos
+                    </label>
+                </div>
+                </fieldset><br>
+
+         <!--    <fieldset>
+                    <legend>Prazo de pagamento</legend>
+                    <select name="prazoPagamento">
+                    <option value="avista">À vista</option>
+                    <option value="5x">5x s/ juros</option>
+                    <option value="10x">10x c/ juros</option>
+                </select> forma de pagamento a prazo separado 
+                </fieldset> --> 
+               <!--  <input type="submit" name="Enviar"><br> -->
+                <button class="btn btn-secondary">Salvar</button>       
+            </form>
+        </section>
+
+    <footer class="container-fluid bg-warning-subtle text-center p-2">
+        <p>Desenvolvido por Thiago Simas.</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
